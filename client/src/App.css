@@ -1,0 +1,20 @@
+.App {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+@media screen and (min-width: 576px) {
+  .flex-sm {
+    display: flex;
+  }
+}/*# sourceMappingURL=App.css.map */

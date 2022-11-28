@@ -1,0 +1,62 @@
+$color-primary: grey;
+$color-secondary: silver;
+$color-complementary: #67c2ff;
+$border-radius: 5px;
+
+.todolist {
+  &__item {
+    margin-bottom: 5px;
+  }
+
+  &__order {
+    flex: 0 0 auto;
+    display: block;
+    padding: 0.5rem;
+    border: 1px solid $color-secondary;
+    border-radius: $border-radius;
+    color: $color-secondary;
+  }
+
+  &__input {
+    flex: 1 1 auto;
+    padding: 0.5rem;
+    border: 1px solid $color-secondary;
+    border-radius: $border-radius;
+    color: $color-secondary;
+
+    &:disabled {
+      background: #fff;
+    }
+
+    &:focus-visible {
+      border: 1px solid $color-primary;
+      color: $color-primary;
+      outline: none;
+    }
+  }
+
+  &__ico {
+    flex: 0 0 auto;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    filter: invert(55%) sepia(2%) saturate(9%) hue-rotate(45deg) brightness(92%)
+      contrast(95%);
+
+    &--edit {
+      background-image: url(/assets/pen-solid.svg);
+    }
+
+    &--save {
+      background-image: url(/assets/floppy-disk-solid.svg);
+    }
+
+    &--delete {
+      background-image: url(/assets/trash-solid.svg);
+    }
+  }
+}

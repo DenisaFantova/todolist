@@ -1,0 +1,47 @@
+.addTask {
+  margin-bottom: 0.5rem;
+}
+.addTask__newTask {
+  position: relative;
+}
+.addTask__button {
+  padding: 0.75rem 2rem;
+  background: #fff;
+  border: 1px solid #67c2ff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #67c2ff;
+}
+.addTask__button:hover {
+  background: #67c2ff;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.addTask__label {
+  position: absolute;
+  top: -8px;
+  left: 5px;
+  font-size: 12px;
+  background: #fff;
+  color: silver;
+}
+.addTask__input {
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+@media screen and (min-width: 576px) {
+  .addTask__input {
+    min-width: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .addTask__input {
+    min-width: 500px;
+  }
+}
+.addTask__input:focus-visible {
+  border: 1px solid grey;
+  outline: none;
+}/*# sourceMappingURL=style.css.map */

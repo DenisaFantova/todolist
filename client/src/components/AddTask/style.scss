@@ -1,0 +1,54 @@
+$color-primary: grey;
+$color-secondary: silver;
+$color-complementary: #67c2ff;
+$border-radius: 5px;
+
+.addTask {
+  margin-bottom: 0.5rem;
+  &__newTask {
+    position: relative;
+  }
+
+  &__button {
+    padding: 0.75rem 2rem;
+    background: #fff;
+    border: 1px solid $color-complementary;
+    border-radius: $border-radius;
+    text-transform: uppercase;
+    color: $color-complementary;
+
+    &:hover {
+      background: $color-complementary;
+      color: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    font-size: 12px;
+    background: #fff;
+    color: $color-secondary;
+  }
+  &__input {
+    padding: 0.75rem;
+    border-radius: $border-radius;
+    border: 1px solid $color-secondary;
+
+    @media screen and (min-width: 576px) {
+      min-width: 400px;
+    }
+
+    @media screen and (min-width: 768px) {
+      min-width: 500px;
+    }
+
+    &:focus-visible {
+      border: 1px solid $color-primary;
+      outline: none;
+    }
+  }
+}

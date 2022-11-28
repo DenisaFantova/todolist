@@ -1,0 +1,46 @@
+.todolist__item {
+  margin-bottom: 5px;
+}
+.todolist__order {
+  flex: 0 0 auto;
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid silver;
+  border-radius: 5px;
+  color: silver;
+}
+.todolist__input {
+  flex: 1 1 auto;
+  padding: 0.5rem;
+  border: 1px solid silver;
+  border-radius: 5px;
+  color: silver;
+}
+.todolist__input:disabled {
+  background: #fff;
+}
+.todolist__input:focus-visible {
+  border: 1px solid grey;
+  color: grey;
+  outline: none;
+}
+.todolist__ico {
+  flex: 0 0 auto;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: invert(55%) sepia(2%) saturate(9%) hue-rotate(45deg) brightness(92%) contrast(95%);
+}
+.todolist__ico--edit {
+  background-image: url(/assets/pen-solid.svg);
+}
+.todolist__ico--save {
+  background-image: url(/assets/floppy-disk-solid.svg);
+}
+.todolist__ico--delete {
+  background-image: url(/assets/trash-solid.svg);
+}/*# sourceMappingURL=style.css.map */
